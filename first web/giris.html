@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GİRİŞ</title>
+  
+<style>
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+ 
+.login-page {
+  width: 350px;
+  padding: 8% 0 0;
+  margin: auto;
+  
+}
+.form {
+  position: relative;
+  background: #333;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  top:100px;
+}
+.form input {
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  background: #cfcfcf;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #f4a460;
+}
+
+
+body{
+    background:#252525;
+    font-family: sans-serif;
+}
+ 
+.sayfa{
+	
+	position:relative;
+    width: 950px;
+	height:1000px;
+    margin:50px auto;
+	background-color:white;
+}
+.alt{
+	position:absolute;
+	position:fixed;
+    background: #555;
+	padding-top:20px;
+	padding-bottom:20px;
+	width: 950px;
+	
+    text-align: center;
+    color: #fff;
+	bottom:0px;
+	background-image:url(fotoraflar/foooter.png);
+	background-size: 100% 100%;
+}
+.alt a{
+	 text-decoration: none;
+     color: #fff;
+}
+ 
+
+td{
+ color:white;
+}
+.mes a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+    color: #DD0000;
+    text-decoration: none;
+	transition-duration:0.5s;
+    
+}
+.hed{
+    background: #555;
+	padding-top:20px;
+	padding-bottom:20px;
+	width: 950px;
+	height:60px;
+    text-align: center;
+    color: #fff;
+	font-size:50px;
+	font-family: 'Permanent Marker', cursive;
+	background-image:url(fotoraflar/header.png);
+	background-size: 100% 120%;
+	}
+	.geri{
+
+position:fixed;
+height:45px;
+width:100px;
+top:800px;
+margin-left:930px;
+padding-top:7px;
+padding-left:20px;
+background-color:#f4a460;
+text-align:middle;
+font-weight:bold;
+
+}
+
+.geri a {
+text-decoration:none;
+color:white;
+}
+
+.geri a:hover{
+color:#333;
+transition-duration:0.5s;
+}	
+	
+
+</style> 
+</head>
+  
+<body>
+ <div class="sayfa"> 
+	<div class="ust">
+    <p class="hed">KULLANICI GİRİŞİ</p>
+    </div>
+  <div class="form" >
+    <form class="login-form" name=form1 action="login.asp"  method="POST"  >
+      <input type="email" name="username" id="mail" required placeholder="e-mail adresinizi giriniz" ></td>
+      <input type="password" name="userpwd" placeholder="şifre"/>
+	  <p class="mes"><a href="#">@Şifremi unuttum.</a></p>
+      <button type="submit" name="kaydet" >GİRİŞ</button>
+      <p class="mes"><a href="kayt.html">@Yeni Hesap Oluşturun</a></p>
+    </form>
+  </div>
+
+	
+   
+    <div class="alt">
+    <p>
+            <a href="index.html">Anasayfa</a> | <a href="kimnerde.html">Kim-Nerde-Ne yapıyor?</a> | <a href="kayt.html">Kayıt Ol</a> | <a href="kisiler.html">Kişiler</a> | <a href="harita.html">Harita</a> | </p>
+            <p>
+            © 2019 KARABUK UNIVERSITESI | Tasarım:Berat Yıldız  <a href="#">brtyldzq@gmail.com</a>
+            </p>
+    </div>
+	<div href="" class="geri" ><a href="index.asp">ÖNCEKİ SAYFA</a></div>
+</div>       
+</body>
+</html>

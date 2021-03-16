@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HARİTA</title>
+  
+<style>
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+
+
+body{
+    background:#252525;
+    font-family: sans-serif;
+}
+ 
+.sayfa{
+	
+	position:relative;
+    width: 950px;
+	height:1500px;
+    margin:50px auto;
+	background-color:white;
+}
+.alt{
+	position:absolute;
+	position:fixed;
+    background: #555;
+	padding-top:20px;
+	padding-bottom:20px;
+	width: 950px;
+	
+    text-align: center;
+    color: #fff;
+	bottom:0px;
+	background-image:url(fotoraflar/foooter.png);
+	background-size: 100% 100%;
+}
+.alt a{
+	 text-decoration: none;
+     color: #fff;
+}
+ 
+
+td{
+ color:white;
+}
+
+
+
+.hed{
+    background: #555;
+	padding-top:20px;
+	padding-bottom:20px;
+	width: 950px;
+	height:60px;
+    text-align: center;
+    color: #fff;
+	font-size:50px;
+	font-family: 'Permanent Marker', cursive;
+	background-image:url(fotoraflar/header.png);
+	background-size: 100% 120%;
+	}
+.harita{
+
+width:700px;
+height:600px;
+margin:auto;
+background-color:red;
+
+}
+img{
+position:relative;
+left:-3200px;
+top:-620px;
+}
+
+.geri{
+
+position:fixed;
+height:45px;
+width:100px;
+top:800px;
+margin-left:930px;
+padding-top:7px;
+padding-left:20px;
+background-color:#f4a460;
+text-align:middle;
+font-weight:bold;
+
+}
+
+.geri a {
+text-decoration:none;
+color:white;
+}
+
+.geri a:hover{
+color:#333;
+transition-duration:0.5s;
+}
+<style type="text/css">
+      body { background: #F5FCFF; color: #333666; }
+      section { text-align: center; margin: 50px 0; }
+      .panzoom-parent { border: 2px solid #333; }
+      .panzoom-parent .panzoom { border: 2px dashed #666; }
+      .buttons { margin: 40px 0 0; }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="jquery.panzoom.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+
+
+</style> 
+</head>
+    
+<body>
+ 
+<div class="sayfa">
+<div class="ust">
+    <p class="hed">HARİTA</p>
+    </div>
+
+	 <section>
+      <h1>TURKİYE HARİTASI</h1>
+      <div class="parent">
+        <div class="panzoom">
+          <div class="harita"><img src="turistik.jpg" ></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="zoom-in">Büyüt</button>
+        <button class="zoom-out">Küçült</button>
+        <input type="range" class="zoom-range">
+        <button class="reset">Sıfırla</button>
+      </div>
+      <script>
+        (function() {
+          var $section = $('section').first();
+          $section.find('.panzoom').panzoom({
+            $zoomIn: $section.find(".zoom-in"),
+            $zoomOut: $section.find(".zoom-out"),
+            $zoomRange: $section.find(".zoom-range"),
+            $reset: $section.find(".reset")
+          });
+        })();
+      </script>
+    </section>
+	
+    <div class="alt">
+    <p>
+            <a href="index.asp">Anasayfa</a> | <a href="kimnerde.html">Kim-Nerde-Ne yapıyor?</a> | <a href="kayt.asp">Kayıt Ol</a> | <a href="kisiler.html">Kişiler</a> | <a href="harita.html">Harita</a> | </p>
+            <p>
+            © 2019 KARABUK UNIVERSITESI | Tasarım:Berat Yıldız  <a href="#">brtyldzq@gmail.com</a>
+            </p>
+    </div>
+	<div href="" class="geri" ><a href="index.asp">ÖNCEKİ SAYFA</a></div>
+</div>       
+</body>
+</html>
